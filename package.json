@@ -1,0 +1,16 @@
+{
+  "name": "paradigm-gulp-stylus",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chris Abrams <mail@chrisabrams.com>",
+  "license": "MIT",
+  "dependencies": {
+    "gulp-concat": "^2.4.3",
+    "gulp-stylus": "^2.0.0",
+    "nib": "^1.1.0"
+  }
+}
