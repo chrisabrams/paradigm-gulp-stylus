@@ -1,12 +1,13 @@
 var concat = require('gulp-concat'),
     nib    = require('nib'),
     path   = require('path'),
+    size   = require('gulp-size'),
     stylus = require('gulp-stylus')
 
 /*
 Note: sourcemaps are funky atm so they are disabled until this funkyness is resolved
 */
-module.exports = (options) => {
+module.exports = function(options) {
 
   var gulp = options.gulp
 
@@ -41,6 +42,7 @@ module.exports = (options) => {
       includeContent: false,
       sourceRoot: '/app'
       }))*/
+      .pipe(size({showFiles: true}))
       .pipe(gulp.dest(path.join(process.cwd(), destPath)))
 
   })

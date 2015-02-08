@@ -1,6 +1,6 @@
 {
   "name": "paradigm-gulp-stylus",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -12,5 +12,8 @@
     "gulp-concat": "^2.4.3",
     "gulp-stylus": "^2.0.0",
     "nib": "^1.1.0"
+  },
+  "devDependencies": {
+    "gulp-size": "^1.2.0"
   }
 }
