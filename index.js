@@ -23,6 +23,7 @@ module.exports = function(options) {
         destPath = parts.join('/')
 
     return gulp.src(src)
+      .pipe(concat(destFile + '.styl')) // This is a temp concat (the file is not physically created); it speeds up stylus processing by ~70%.
       .pipe(stylus({
         cache: cache,
         import: imports,
@@ -32,7 +33,7 @@ module.exports = function(options) {
           inline: true,
           sourceRoot: '/'
         },*/
-        use: [nib()]
+        use: [nib()] // This accounts for ~90% of compilation time.
       }))
       /*.pipe(sourcemaps.init({
       loadMaps: true
